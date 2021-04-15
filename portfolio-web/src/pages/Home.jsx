@@ -1,7 +1,7 @@
 import React from 'react';
 import './Home.css';
-import TopBar from '../elements/TopBar';
 import { Link } from 'react-router-dom';
+import TopBar from '../elements/TopBar';
 
 const Home = () => (
   <div className="home">

@@ -7,7 +7,7 @@ import './TopBar.css';
 const TopBar = ({ title }) => {
   document.title = `Portfólio - ${title}`;
   const ButtonToHome = () => (
-    <Link to="/">
+    <Link to="/portfolio">
       <button type="button">Ir para a Home</button>
     </Link>
   );
