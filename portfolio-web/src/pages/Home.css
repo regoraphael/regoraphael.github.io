@@ -1,0 +1,38 @@
+.home{
+  width: 100%;
+  color: white;
+}
+
+.content-home {
+ margin: 35px auto;
+ width: fit-content;
+}
+
+.content-home h1{
+  margin-bottom: 35px;
+}
+
+.div-buttons{
+  margin-top: 10vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 60vw;
+  height: 50px;
+}
+
+.div-buttons button{
+  background-color: inherit;
+  font-weight:bold;
+  color: white;
+  border: 1px solid white;
+  border-radius: 5px;
+  transition: ease-in 200ms;
+  height: 100%;
+}
+
+.div-buttons button:hover {
+  border: 3px solid white;
+  cursor: pointer;
+  transform: scale(1.3);
+}
