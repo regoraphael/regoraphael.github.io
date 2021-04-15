@@ -1,6 +1,7 @@
 body {
   font-family: Montserrat, sans-serif;
-  background-color:#e7ebf0;
+  background-image: linear-gradient( black 2vh, #141414);
+  height: 100vh;
   margin:0;
   padding: 0;
   border: 0px; 
