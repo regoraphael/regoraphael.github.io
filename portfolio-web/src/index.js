@@ -14,7 +14,7 @@ ReactDOM.render(
   // eslint-disable-next-line react/jsx-filename-extension
   <BrowserRouter>
     <Switch>
-      <Route exact path="/portfolio" component={Home} />
+      <Route exact path="/" component={Home} />
       <Route path="/portfolio/about" component={About} />
       <Route path="/portfolio/projects" component={Projects} />
       <Route path="/portfolio/contact" component={Contact} />
