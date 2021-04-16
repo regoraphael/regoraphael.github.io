@@ -1,6 +1,15 @@
-import React from 'react';
-import TopBar from '../elements/TopBar';
+import React, { useState } from 'react';
+import Header from '../elements/Header';
+import Menu from '../elements/Menu';
 
-const Contact = () => <TopBar title="Contact" />;
+const Contact = () => {
+  const [showMenu, changeMenuStatus] = useState(false);
+  return (
+    <div>
+      <Header title="Contact" menu={{ showMenu, changeMenuStatus }} />
+      <Menu showMenu={showMenu} />
+    </div>
+  );
+};
 
 export default Contact;

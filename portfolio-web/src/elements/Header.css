@@ -1,0 +1,42 @@
+.top-bar{
+  text-align: center;
+  width: 100%;
+  height: 35px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: white;
+  padding-top: 1.5vh;
+}
+
+#menu-icon{
+  height: 80%;
+  transition: ease 500ms;
+  margin-left: 8.7vw;
+}
+
+#menu-icon:hover{
+  cursor: pointer;
+}
+
+#title{
+  margin-left: 35vw;
+}
+
+#button-home{
+  background-color: inherit;
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 10px;
+  color: white;
+  transition: ease 300ms;
+  margin-left: 32vw;
+}
+
+#button-home:hover {
+  transform: scale(1.2);
+}
+
+.rotate90{
+  transform: rotate(90deg);
+}

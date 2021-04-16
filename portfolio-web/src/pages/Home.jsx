@@ -1,31 +1,50 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Home.css';
 import { Link } from 'react-router-dom';
-import TopBar from '../elements/TopBar';
+import Header from '../elements/Header';
+import Footer from '../elements/Footer';
+import Menu from '../elements/Menu';
 
-const Home = () => (
-  <div className="home">
-    <TopBar title="Home" />
-    <div className="content-home">
-      <h1>{'<Hello world! />'}</h1>
-      <p>Meu nome é Raphael e sou estudande de Desenvolvimento Web na Trybe!</p>
-      <p>Aqui você encontrará informações pessoais e meu portfólio de projetos.</p>
-      <div className="div-buttons">
-        <Link to="/about">
-          <button type="button">Saiba mais sobre mim</button>
-        </Link>
-        <Link to="/projects">
-          <button type="button">Veja meus projetos</button>
-        </Link>
-        <Link to="/certificates">
-          <button type="button">Veja meus certificados</button>
-        </Link>
-        <Link to="/contact">
-          <button type="button">Entre em contato</button>
-        </Link>
+const Home = () => {
+  const [showMenu, changeMenuStatus] = useState(false);
+  return (
+    <div className="home">
+      <Header title="Home" menu={{ showMenu, changeMenuStatus }} />
+      <div className="main-div">
+        <Menu showMenu={showMenu} />
+        <div className="content-home">
+          <h1>{'<Hello world! />'}</h1>
+          <p>
+            {'Eu sou Raphael, e atualmente estudo de Desenvolvimento Web na '}
+            <a
+              className="link-trybe"
+              href="https://www.betrybe.com/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Trybe!
+            </a>
+          </p>
+          <p>
+            Aqui você encontra algumas informações minhas, meus dados de contato e meu
+            portfólio de projetos.
+          </p>
+          <nav className="div-buttons">
+            <Link to="/portfolio/about">
+              <button type="button">Saiba mais sobre mim</button>
+            </Link>
+            <Link to="/portfolio/projects">
+              <button type="button">Veja meus projetos</button>
+            </Link>
+            <Link to="/portfolio/contact">
+              <button type="button">Entre em contato</button>
+            </Link>
+          </nav>
+        </div>
       </div>
+      <Footer />
     </div>
-  </div>
-);
+  );
+};
 
 export default Home;

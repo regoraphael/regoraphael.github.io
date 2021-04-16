@@ -1,0 +1,18 @@
+footer {
+  position: fixed;
+  top: 92vh;
+  width: 100vw;
+  height: 6vh;
+  text-align: right;
+}
+
+footer img{
+  height: 100%;
+  padding-bottom: 10px;
+  padding-right: 20px;
+  transition: ease 200ms;
+}
+
+footer img:hover{
+  transform: scale(1.3);
+}

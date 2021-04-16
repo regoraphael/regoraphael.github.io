@@ -1,6 +1,15 @@
-import React from 'react';
-import TopBar from '../elements/TopBar';
+import React, { useState } from 'react';
+import Header from '../elements/Header';
+import Menu from '../elements/Menu';
 
-const About = () => <TopBar title="About" />;
+const About = () => {
+  const [showMenu, changeMenuStatus] = useState(false);
+  return (
+    <div>
+      <Header title="About" menu={{ showMenu, changeMenuStatus }} />
+      <Menu showMenu={showMenu} />
+    </div>
+  );
+};
 
 export default About;
