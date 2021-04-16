@@ -15,14 +15,14 @@ const Home = () => {
         <div className="content-home">
           <h1>{'<Hello world! />'}</h1>
           <p>
-            {'Eu sou Raphael, e atualmente estudo de Desenvolvimento Web na '}
+            {'Eu sou Raphael, sou Desenvolvedor Front-End Júnior e estudo de Desenvolvimento Web na '}
             <a
               className="link-trybe"
               href="https://www.betrybe.com/"
               target="_blank"
               rel="noreferrer"
             >
-              Trybe!
+              Trybe.
             </a>
           </p>
           <p>
