@@ -58,11 +58,15 @@ const About = () => {
           </div>
           <div className="tecnologies">
             <img className="logo-png" src={reactLogo} alt="react-logo" />
-            Hooks
+            React - Hooks
+          </div>
+          <div className="tecnologies">
+            <img className="logo-png" src={reactLogo} alt="react-logo" />
+            React - Context API
           </div>
           <div className="tecnologies">
             <img className="logo-png" src={reduxLogo} alt="redux-logo" />
-            Redux
+            React - Redux
           </div>
           <div className="tecnologies">
             <img className="logo-png" src={javascriptLogo} alt="javascript-logo" />
