@@ -1,0 +1,34 @@
+#contact-content {
+  color: white;
+  width: 75vw;
+  margin-left: 25vw;
+  font-size: 3vh;
+}
+
+.logo-contact{
+  height: 10vh;
+  margin-right: 1vw;
+}
+
+.contact-method{
+  font-size: 1.5vw;
+  margin-right: 0;
+  margin-bottom: 5vh;
+  display: flex;
+  align-items: center;
+  transition: ease 300ms;
+  width: fit-content;
+  padding: 10px;
+}
+
+.contact-method:hover{
+  border: 1px solid white;
+  border-radius: 5px;
+  transform: scale(1.2);
+}
+
+#contact-content a{
+  color: white;
+  text-decoration: none;
+  width: fit-content;
+}
