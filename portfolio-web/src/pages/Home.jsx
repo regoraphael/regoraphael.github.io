@@ -30,13 +30,13 @@ const Home = () => {
             portfólio de projetos.
           </p>
           <nav className="div-buttons">
-            <Link to="/portfolio/about">
+            <Link to="/about">
               <button type="button">Saiba mais sobre mim</button>
             </Link>
-            <Link to="/portfolio/projects">
+            <Link to="/projects">
               <button type="button">Veja meus projetos</button>
             </Link>
-            <Link to="/portfolio/contact">
+            <Link to="/contact">
               <button type="button">Entre em contato</button>
             </Link>
           </nav>

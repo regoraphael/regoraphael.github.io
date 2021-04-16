@@ -23,7 +23,7 @@ const Header = ({ title, menu: { showMenu, changeMenuStatus } }) => {
     }
   };
   const ButtonToHome = () => (
-    <Link to="/portfolio">
+    <Link to="/">
       <button id="button-home" type="button">Home</button>
     </Link>
   );

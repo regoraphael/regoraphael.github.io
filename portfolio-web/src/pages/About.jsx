@@ -46,7 +46,7 @@ const About = () => {
             <strong> Trybe </strong>
             e todos os meus interesses profissionais estão voltados para o mercado de tecnologia.
           </p>
-          <Link to="/portfolio/contact">
+          <Link to="/contact">
             <button type="button">Entre em contato</button>
           </Link>
         </div>

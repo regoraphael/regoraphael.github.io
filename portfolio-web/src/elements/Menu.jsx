@@ -7,13 +7,13 @@ const Menu = ({ showMenu }) => (
   <div className={showMenu ? 'main openMenu' : 'main closeMenu'}>
     <h2>{'<Menu />'}</h2>
     <nav className="nav-menu ">
-      <Link to="/portfolio/about">
+      <Link to="/about">
         <button type="button">Sobre mim</button>
       </Link>
-      <Link to="/portfolio/projects">
+      <Link to="/projects">
         <button type="button">Projetos</button>
       </Link>
-      <Link to="/portfolio/contact">
+      <Link to="/contact">
         <button type="button">Contato</button>
       </Link>
     </nav>
