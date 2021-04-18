@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import Header from '../elements/Header';
 import Menu from '../elements/Menu';
 import projects from '../data/projects';
+import leftArrow from '../images/leftArrow.png';
+import rightArrow from '../images/rightArrow.png';
 import './Projects.css';
 
 const Projects = () => {
@@ -26,19 +28,37 @@ const Projects = () => {
       default: break;
     }
   };
-  const { name, description } = projects[index];
+  const {
+    name,
+    description,
+    image,
+    tecnologies,
+  } = projects[index];
   return (
     <div>
       <Header title="Projects" menu={{ showMenu, changeMenuStatus }} />
       <Menu showMenu={showMenu} />
       <div id="project-details">
-        <h1>{`Projeto ${name}`}</h1>
-        <h4>{`Detalhes: ${description}`}</h4>
-        <button type="button" onClick={() => changeProject('+')}>
-          Próximo Projeto
-        </button>
         <button type="button" onClick={() => changeProject('-')}>
-          Projeto Anterior
+          <img className="direction-arrow" src={leftArrow} alt="projeto anterior" />
+        </button>
+        <div>
+          <h1>{`Projeto ${name}`}</h1>
+          <h4>{`Detalhes: ${description}`}</h4>
+          <img id="project-image" src={image} alt="project thumb" />
+          <div id="footer-content">
+            <ul>
+              Tecnologias utilizadas:
+              { tecnologies.map((tecnologie) => <li>{tecnologie}</li>) }
+            </ul>
+            <div>
+              <button type="button">Ver repositório do Projeto</button>
+              <button type="button">Ver site do projeto</button>
+            </div>
+          </div>
+        </div>
+        <button style={{ marginLeft: '2vw' }} type="button" onClick={() => changeProject('+')}>
+          <img className="direction-arrow" src={rightArrow} alt="próximo projeto" />
         </button>
       </div>
     </div>
