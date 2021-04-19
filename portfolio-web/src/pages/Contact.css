@@ -1,8 +1,8 @@
 #contact-content {
   color: white;
-  width: 75vw;
-  margin-left: 25vw;
   font-size: 3vh;
+  margin-left: 25vw;
+  width: 75vw;
 }
 
 .logo-contact{
@@ -11,19 +11,19 @@
 }
 
 .contact-method{
-  font-size: 1.5vw;
-  margin-right: 0;
-  margin-bottom: 5vh;
-  display: flex;
   align-items: center;
+  display: flex;
+  font-size: 1.5vw;
+  margin-bottom: 5vh;
+  margin-right: 0;
+  padding: 10px;
   transition: ease 300ms;
   width: fit-content;
-  padding: 10px;
 }
 
 .contact-method:hover{
-  border: 1px solid white;
   border-radius: 5px;
+  border: 1px solid white;
   transform: scale(1.2);
 }
 
@@ -31,4 +31,21 @@
   color: white;
   text-decoration: none;
   width: fit-content;
+}
+
+@media ( max-width : 1000px ) {
+  #contact-content {
+    font-size: 14px;
+    height: fit-content;
+    margin: 10px 0;
+    padding: 10px;
+    width: 100vw;
+  }
+  #contact-content img{
+    height: 10vh;
+  }
+  #contact-content a{
+    font-size: 18px;
+    margin-left: 30px;
+  }
 }

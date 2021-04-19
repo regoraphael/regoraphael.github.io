@@ -1,25 +1,15 @@
 import netflixCloneImage from '../images/netflixCloneImage.png';
-import onlineStoreImage from '../images/onlineStoreImage.png';
-import trybeWalletImage from '../images/trybeWalletImage.png';
+import netflixMobile from '../images/netflixMobile.jpeg';
 
 const projects = [
   {
     name: 'Netflix Clone',
-    description: 'Clone do netflix usando React Hooks, CSS, e API de filmes.',
+    description: 'Clone do layout do Netflix, alimentado por api de filmes',
     image: netflixCloneImage,
+    mobile: netflixMobile,
     tecnologies: ['ReactJS', 'React Hooks', 'CSS', 'API'],
-  },
-  {
-    name: 'Loja Online',
-    description: 'Loja Online Desenvolvida usando React-Redux e API do MercadoLivre.',
-    image: onlineStoreImage,
-    tecnologies: ['ReactJS', 'React Redux', 'CSS', 'API'],
-  },
-  {
-    name: 'Trybe Wallet',
-    description: 'Carteira de gastos usando dados de API de câmbio em tempo real',
-    image: trybeWalletImage,
-    tecnologies: ['ReactJS', 'CSS', 'API'],
+    repository: 'https://github.com/regoraphael/netflix-clone',
+    site: 'https://regoraphael.github.io/netflix-clone/',
   },
 ];
 

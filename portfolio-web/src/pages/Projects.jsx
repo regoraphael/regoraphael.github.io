@@ -32,7 +32,10 @@ const Projects = () => {
     name,
     description,
     image,
+    mobile,
     tecnologies,
+    repository,
+    site,
   } = projects[index];
   return (
     <div>
@@ -40,24 +43,40 @@ const Projects = () => {
       <Menu showMenu={showMenu} />
       <div id="project-details">
         <button type="button" onClick={() => changeProject('-')}>
-          <img className="direction-arrow" src={leftArrow} alt="projeto anterior" />
+          <img id="left-arrow" className="direction-arrow" src={leftArrow} alt="projeto anterior" />
         </button>
-        <div>
+        <div id="project-details-center">
           <h1>{`Projeto ${name}`}</h1>
           <h4>{`Detalhes: ${description}`}</h4>
-          <img id="project-image" src={image} alt="project thumb" />
+          <img
+            id="project-image"
+            src={window.innerWidth > 1000 ? image : mobile}
+            alt="project thumb"
+          />
           <div id="footer-content">
             <ul>
               Tecnologias utilizadas:
               { tecnologies.map((tecnologie) => <li>{tecnologie}</li>) }
             </ul>
-            <div>
-              <button type="button">Ver repositório do Projeto</button>
-              <button type="button">Ver site do projeto</button>
+            <div id="links-footer">
+              <a
+                href={repository}
+                target="_blank"
+                rel="noreferrer"
+              >
+                Ver repositório do Projeto
+              </a>
+              <a
+                href={site}
+                target="_blank"
+                rel="noreferrer"
+              >
+                Ver site do projeto
+              </a>
             </div>
           </div>
         </div>
-        <button style={{ marginLeft: '2vw' }} type="button" onClick={() => changeProject('+')}>
+        <button id="right-arrow" style={{ marginLeft: '2vw' }} type="button" onClick={() => changeProject('+')}>
           <img className="direction-arrow" src={rightArrow} alt="próximo projeto" />
         </button>
       </div>
